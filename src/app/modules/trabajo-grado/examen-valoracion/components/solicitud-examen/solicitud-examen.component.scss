@@ -1,0 +1,28 @@
+.center-div{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.solicitud-examen {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 10%;
+    margin: 10px;
+  }
+
+  .solicitud-examen i {
+    margin-right: 10px;
+  }
+  .mi-icono {
+    transform: scale(3); /* Escala el icono por 1.5 veces su tamaño */
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .margin-button{
+    margin-left: 2rem;
+  }

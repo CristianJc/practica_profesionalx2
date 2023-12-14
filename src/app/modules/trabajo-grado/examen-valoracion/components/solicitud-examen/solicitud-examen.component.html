@@ -1,0 +1,165 @@
+<p-card>
+    <div class="center-div col-12"><h2>Examen de valoración</h2></div>
+    <div class="center-div col-12">
+        <p-fieldset legend="Datos del estudiante">
+            <div class="field grid">
+                <div class="col-4 text-right font-medium align-self-center">
+                    <label>Código</label>
+                </div>
+                <div class="col-8 text-right font-medium align-self-center">
+                    <label>XXXXXXXXXXXXXXX</label>
+                </div>
+            </div>
+            <div class="field grid">
+                <div class="col-4 text-right font-medium align-self-center">
+                    <label>Identificación</label>
+                </div>
+                <div class="col-8 text-right font-medium align-self-center">
+                    <label>XXXXXXXXXXXXXXX</label>
+                </div>
+            </div>
+            <div class="field grid">
+                <div class="col-4 text-right font-medium align-self-center">
+                    <label>Nombre y Apellido</label>
+                </div>
+                <div class="col-8 text-right font-medium align-self-center">
+                    <label>XXXXXXXXXXXXXXX</label>
+                </div>
+            </div>
+        </p-fieldset>
+    </div>
+
+    <div class="solicitud-examen">
+        <i class="pi pi-file pi-3x mi-icono"></i>
+        <span>Solicitud examen de valoración</span>
+    </div>
+
+    <p-panel>
+        <p-header>
+            <b>Información asociada a la solicitud del examen de valoración</b>
+        </p-header>
+        <div class="col-4 text-right font-medium">
+            <p class="label-required"><b>Indica obligatorio</b></p>
+        </div>
+
+        <!-- Encabezado -->
+        <div class="field grid">
+            <div class="col-4 text-right font-medium align-self-center">
+                <label class="label-required"
+                    >Título del trabajo de Investigación</label
+                >
+            </div>
+            <div class="col-8">
+                <input
+                    pInputText
+                    [maxLength]="50"
+                    class="p-inputtext-sm w-30rem"
+                    [ngClass]="{ 'ng-invalid ng-dirty': '' && 'invalid' }"
+                />
+            </div>
+        </div>
+        <div class="field grid">
+            <div class="col-4 text-right font-medium align-self-center">
+                <label class="label-required"
+                    >Solicitud examen de valoracion (formato A. pdf)</label
+                >
+            </div>
+            <div class="col-4">
+                <div class="p-inputgroup w-30rem">
+                    <div
+                        class="p-inputtext p-inputtext-sm border-noround-right"
+                    ></div>
+                    <button
+                        type="button"
+                        icon="pi pi-cloud-upload"
+                        pButton
+                        label="Seleccionar solicitud"
+                    ></button>
+                </div>
+            </div>
+            <div class="col-4">
+                <button
+                    type="button"
+                    icon="pi pi-plus-circle"
+                    pButton
+                    label="Crear Documento"
+                ></button>
+            </div>
+        </div>
+        <div class="field grid">
+            <div class="col-4 text-right font-medium align-self-center">
+                <label class="label-required"
+                    >Anteproyecto presentado a examen (formato D. pdf, .rar,
+                    .zip)</label
+                >
+            </div>
+            <div class="col-8">
+                <div class="p-inputgroup w-30rem">
+                    <div
+                        class="p-inputtext p-inputtext-sm border-noround-right"
+                    ></div>
+                    <button
+                        type="button"
+                        icon="pi pi-cloud-upload"
+                        pButton
+                        label="Seleccionar solicitud"
+                    ></button>
+                </div>
+            </div>
+        </div>
+        <div class="field grid">
+            <div class="col-4 text-right font-medium align-self-center">
+                <label class="label-required"
+                    >Examen de valoración (formato E. pdf, .rar, .zip)</label
+                >
+            </div>
+            <div class="col-4">
+                <div class="p-inputgroup w-30rem">
+                    <div
+                        class="p-inputtext p-inputtext-sm border-noround-right"
+                    ></div>
+                    <button
+                        type="button"
+                        icon="pi pi-cloud-upload"
+                        pButton
+                        label="Seleccionar solicitud"
+                    ></button>
+                </div>
+            </div>
+            <div class="col-4">
+                <button
+                    type="button"
+                    icon="pi pi-plus-circle"
+                    pButton
+                    label="Crear Documento"
+                ></button>
+            </div>
+        </div>
+        <div class="field grid">
+            <div class="col-4 text-right font-medium align-self-center">
+                <label class="label-required">Soporte (.pdf, .rar, .zip)</label>
+            </div>
+            <div class="col-8">
+                <div class="p-inputgroup w-30rem">
+                    <div
+                        class="p-inputtext p-inputtext-sm border-noround-right"
+                    ></div>
+                    <button
+                        type="button"
+                        icon="pi pi-cloud-upload"
+                        pButton
+                        label="Seleccionar solicitud"
+                    ></button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <p-footer>
+            <button
+                pButton
+                icon="pi pi-save"
+                label="Registrar Información"
+            ></button>
+        </p-footer>
+    </p-panel>
+</p-card>
